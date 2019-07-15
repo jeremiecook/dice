@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sex Dice</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- default, black, and black-translucent -->
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icon.png">
+</head>
+<body>
+
+
+<div class="scene">
+
+    <div class="wrapper">
+      <div id="dice1" class="dice zoom">
+        <div class="drag-container">
+          <ul class="faces">
+            <li>Kiss</li>
+            <li>Suck</li>
+            <li>Stroke</li>
+            <li>Tickle</li>
+            <li>Blow</li>
+            <li>Lick</li>
+            <li>You choose</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div id="dice2" class="dice zoom">
+        <div class="drag-container">
+          <ul class="faces">
+            <li>Mouth</li>
+            <li>Neck</li>
+            <li>Nipples</li>
+            <li>Belly</li>
+            <li>Ears</li>
+            <li>Elbows</li>
+            <li>Thigh</li>
+            <li>Lips</li>
+            <li>You choose</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="dice.js"></script>
+    <script>
+        d1 = new Dice('#dice1', '#FF8D47', '#FFC647');
+        d2 = new Dice('#dice2', '#FF4D5B', '#FF684D');
+    </script>
+</body>
+</html>
